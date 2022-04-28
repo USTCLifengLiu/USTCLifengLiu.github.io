@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Liu Lifeng">
+    
+    <title>
+        
+            Latex-Beamer模版制作教程 |
+        
+        Liu Lifeng&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/bgi.jpg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"cn"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"rgba(0, 102, 204, 0.8)","avatar":"/images/2.jpg","favicon":"/images/bgi.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bgi.jpg","description":"Love and Peace!"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Liu Lifeng&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">Latex-Beamer模版制作教程</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/2.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Liu Lifeng</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-04-28 00:00:00</span>
+        <span class="mobile">2022-04-28 00:00</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/Study/">Study</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Latex/">Latex</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Beamer/">Beamer</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/bib/">bib</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.5k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>6 Mins</span>
+        </span>
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h2 id="Latex-Beamer模版制作教程"><a href="#Latex-Beamer模版制作教程" class="headerlink" title="Latex-Beamer模版制作教程"></a><strong>Latex-Beamer模版制作教程</strong></h2><p>本文旨在对<em>Latex</em>的模版制作提供一定的帮助，在过程上进行一个总结。本文主要参考了<a class="link" target="_blank" rel="noopener" href="https://wjrsbu.smartapps.cn/zhihu/article?id=401401807&isShared=1&_swebfr=1&_swebFromHost=baiduboxapp">知乎<i class="fas fa-external-link-alt"></i></a>以及<a class="link" target="_blank" rel="noopener" href="https://blog.csdn.net/HGGshiwo/article/details/113774758">CSDN<i class="fas fa-external-link-alt"></i></a>两篇文章来制作了一个新的模版（主要是更换现有模版中的颜色以及一些配置）。由于自己制作一个新的模版过于困难，（不过也可以参考<a class="link" target="_blank" rel="noopener" href="https://tex.stackexchange.com/questions/146529/design-a-custom-beamer-theme-from-scratch">Google<i class="fas fa-external-link-alt"></i></a>来进行制作），所以主要基于metropolis模版，在此基础上对模版的颜色以及footline等进行改变，同时参考<a class="link" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44036964/article/details/116919298">CSDN<i class="fas fa-external-link-alt"></i></a>处理了文献引入的问题。Beamer还做的非常粗糙，不过算是对这一方向的一次大胆尝试，将会在后面放上代码以及模版展示。</p>
+<h3 id="Latex环境"><a href="#Latex环境" class="headerlink" title="Latex环境"></a><strong>Latex环境</strong></h3><ul>
+<li><a class="link" target="_blank" rel="noopener" href="https://code.visualstudio.com/">Vs Code<i class="fas fa-external-link-alt"></i></a> </li>
+<li><a class="link" target="_blank" rel="noopener" href="https://www.php.cn/tool/vscode/432289.html">Vs Code使用教程<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<p>本文的Latex编译是在Vs Code下进行的，具体可以在<a class="link" target="_blank" rel="noopener" href="https://www.baidu.com/">百度<i class="fas fa-external-link-alt"></i></a>进行搜索。</p>
+<h3 id="制作过程"><a href="#制作过程" class="headerlink" title="制作过程"></a><strong>制作过程</strong></h3><h4 id="Beamer模版的结构"><a href="#Beamer模版的结构" class="headerlink" title="Beamer模版的结构"></a><strong>Beamer模版的结构</strong></h4><p>我们首先介绍Beamer模版的结构。Beamer模版通常由theme，outertheme，innertheme，colortheme构成。</p>
+<p>1.<em>theme</em></p>
+<p>其中theme是整体的主题，起到一个统筹的作用，在平时调用其他的模版的时候，通常在.tex文件中如此实现：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\usetheme&#123;theme&#125;  #theme在使用时换成要使用的模版的名字</span><br></pre></td></tr></table></figure>
+<p>如果要创造自己的theme，可以创建beamertheme<font color="red">Lifeng</font>.sty文件在里边进行编写（这里的<font color="red">Lifeng</font>可以改为你自己想要使用的名字，比如：USTC，然后你的模版的名字就是USTC，后面的outertheme，innertheme以及colortheme的sty文件都可以这样命名），然后在.tex文件中使用<code>\usetheme&#123;Lifeng&#125;</code>来使用<font color="red">Lifeng</font>这一模版。在beamertheme<font color="red">Lifeng</font>.sty文件中可以直接实现想要的功能，或者在.tex文件中对想要实现的功能进行补充。本文直接使用的metropolis模版，在.tex文件中进行的颜色以及footline功能的改变，实现方法可以参考最后的代码。这里放上要自己制作模版beamertheme[名称].sty文件的基本操作。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">####beamerthemeLifeng.sty文件内容</span><br><span class="line"></span><br><span class="line">\mode&lt;presentation&gt;</span><br><span class="line"></span><br><span class="line">% Requirement</span><br><span class="line">\RequirePackage&#123;tikz&#125;</span><br><span class="line"></span><br><span class="line">% Settings</span><br><span class="line">\useinnertheme&#123;Lifeng&#125;</span><br><span class="line">\useoutertheme&#123;Lifeng&#125;</span><br><span class="line">\usecolortheme&#123;Lifeng&#125;</span><br><span class="line"></span><br><span class="line">\setbeamertemplate&#123;navigation symbols&#125;&#123;&#125;    #去掉navigation</span><br><span class="line">\setbeamertemplate&#123;blocks&#125;[rounded][shadow=true]    #让block的边角是圆的，而且产生阴影</span><br><span class="line"></span><br><span class="line">\mode</span><br><span class="line">&lt;all&gt;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li><em>outertheme</em></li>
+</ol>
+<p>outertheme控制普通页面（frame）的结构和框架，在此时要对比如navigation或footline之类的控制的时候，就是需要对outertheme来进行编写。在我自己的模版实现中采用了已有的infolines来进行实现，主要是控制了footline可以体现出学校，作者，标题等。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\useoutertheme&#123;infolines&#125;      #这里的infolines可以替换为其他的outertheme的模版</span><br></pre></td></tr></table></figure>
+<p>关于outertheme可以与theme相同通过创建一个beameroutertheme<font color="red">Lifeng</font>.sty文件来进行自己的制作，具体可以参考<a class="link" target="_blank" rel="noopener" href="https://tex.stackexchange.com/questions/146529/design-a-custom-beamer-theme-from-scratch">Google<i class="fas fa-external-link-alt"></i></a>。关于其他的outertheme模版可以在<a class="link" target="_blank" rel="noopener" href="https://www.baidu.com/">百度<i class="fas fa-external-link-alt"></i></a>搜索，或者参考<a class="link" target="_blank" rel="noopener" href="http://pan.baidu.com/s/1gfIDiYB">Beamer用户手册<i class="fas fa-external-link-alt"></i></a>第三章的内容。</p>
+<ol start="3">
+<li><em>innertheme</em></li>
+</ol>
+<p>innertheme用来调整标题页，小节页的组成，也可以用来控制普通页面内一些特殊结构的样式（比如脚注、列表、表格等）。本文直接使用了metropolis的innertheme，当然也可以通过创建一个beamerinnertheme<font color="red">Lifeng</font>.sty文件来进行自己的制作。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\useinnertheme&#123;metropolis&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><em>colortheme</em></li>
+</ol>
+<p>colortheme就是整体配色，可以通过beamercolortheme<font color="red">Lifeng</font>.sty文件来进行控制。然后在.tex文件或者beamerthemeLifeng.sty文件里调用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\usecolortheme&#123;Lifeng&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">####beamercolorthemeLifeng.sty</span><br><span class="line"></span><br><span class="line">\mode&lt;presentation&gt;</span><br><span class="line"></span><br><span class="line">% Settings</span><br><span class="line">\definecolor&#123;pri&#125;&#123;HTML&#125;&#123;0F4C75&#125;</span><br><span class="line">\definecolor&#123;sec&#125;&#123;HTML&#125;&#123;3282B8&#125;</span><br><span class="line">\definecolor&#123;ter&#125;&#123;HTML&#125;&#123;BBE1FA&#125;</span><br><span class="line">\definecolor&#123;ale&#125;&#123;HTML&#125;&#123;FF7E67&#125;</span><br><span class="line"></span><br><span class="line">\setbeamercolor&#123;title&#125;&#123;fg=pri&#125;</span><br><span class="line">\setbeamercolor&#123;title separator&#125;&#123;fg=pri&#125;</span><br><span class="line">\setbeamercolor&#123;author&#125;&#123;fg=sec&#125;</span><br><span class="line">\setbeamercolor&#123;institute&#125;&#123;fg=sec&#125;</span><br><span class="line">\setbeamercolor&#123;date&#125;&#123;fg=sec&#125;</span><br><span class="line"></span><br><span class="line">\setbeamercolor*&#123;palette primary&#125;&#123;fg=white, bg=pri&#125;</span><br><span class="line">\setbeamercolor*&#123;palette secondary&#125;&#123;fg=white, bg=sec&#125;</span><br><span class="line">\setbeamercolor*&#123;palette tertiary&#125;&#123;fg=pri,bg=ter&#125;</span><br><span class="line"></span><br><span class="line">\setbeamercolor&#123;alerted text&#125;&#123;bg=ale&#125;</span><br><span class="line">\setbeamercolor*&#123;block title&#125;&#123;bg=pri!30!white&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\mode</span><br><span class="line">&lt;all&gt;</span><br></pre></td></tr></table></figure>
+<p>如果想要更改颜色，可以直接修改上面<code>\definecolor&#123;pri&#125;&#123;HTML&#125;&#123;0F4C75&#125;</code>等里边的颜色编码。其他的好看的颜色组合可以参考<a class="link" target="_blank" rel="noopener" href="https://wjrsbu.smartapps.cn/zhihu/article?id=401401807&isShared=1&_swebfr=1&_swebFromHost=baiduboxapp">知乎<i class="fas fa-external-link-alt"></i></a>。到这里就可以制作想要的beamer模版了，具体代码以及模版在最后。</p>
+<h4 id="Latex的引用"><a href="#Latex的引用" class="headerlink" title="Latex的引用"></a><strong>Latex的引用</strong></h4><p>这里主要参考了<a class="link" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44036964/article/details/116919298">CSDN<i class="fas fa-external-link-alt"></i></a>，先在Vs Code中对Lifeng-example.tex进行一次编译，然后在terminal中使用<code>cd /Users/apple/Desktop/Lifeng_template</code>打开Lifeng-example.aux文件所在的文件夹，然后使用<code>bibtex Lifeng-example</code>编译一次，然后再对Lifeng-example.tex进行两次编译，就可以得到引用了。上面的文件名根据自己的文件名来进行实现。</p>
+<h3 id="Beamer制作代码以及模版展示"><a href="#Beamer制作代码以及模版展示" class="headerlink" title="Beamer制作代码以及模版展示"></a><strong>Beamer制作代码以及模版展示</strong></h3><h4 id="Beamer制作代码"><a href="#Beamer制作代码" class="headerlink" title="Beamer制作代码"></a><strong>Beamer制作代码</strong></h4><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">####</span> Lifeng-example.tex 文件内容</span><br><span class="line"></span><br><span class="line"><span class="keyword">\documentclass</span>[12pt]&#123;beamer&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>[utf8]&#123;inputenc&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>[T1]&#123;fontenc&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;amsmath&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;cite&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">%\setbeamertemplate&#123;navigation symbols&#125;&#123;&#125;</span></span><br><span class="line"><span class="keyword">\usetheme</span>[block=fill, sectionpage=none]&#123;metropolis&#125;</span><br><span class="line"><span class="keyword">\useinnertheme</span>&#123;metropolis&#125;</span><br><span class="line"><span class="keyword">\useoutertheme</span>&#123;infolines&#125;</span><br><span class="line"><span class="keyword">\usecolortheme</span>&#123;Lifeng&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">\setbeamertemplate</span>&#123;headline&#125;&#123;&#125;    <span class="params">#</span>去掉headline</span><br><span class="line"><span class="keyword">\setbeamertemplate</span>&#123;blocks&#125;[rounded][shadow=true]  </span><br><span class="line"><span class="keyword">\setbeamertemplate</span>&#123;items&#125;[ball]    </span><br><span class="line"><span class="keyword">\setbeamertemplate</span>&#123;sections/subsections in toc&#125;[ball]</span><br><span class="line"></span><br><span class="line"><span class="keyword">\title</span>&#123;LCSTE and Model Averaging Combination&#125;</span><br><span class="line"><span class="keyword">\date</span>[<span class="keyword">\today</span>]&#123;<span class="keyword">\today</span>&#125;</span><br><span class="line"><span class="keyword">\author</span>[Lifeng Liu]&#123;Lifeng Liu <span class="keyword">\texttt</span>&#123;cqllfustc@mail.ustc.edu.cn&#125;&#125;</span><br><span class="line"><span class="keyword">\institute</span>[USTC]&#123;University of Technology and Science of China&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;frame&#125;</span><br><span class="line"><span class="keyword">\maketitle</span></span><br><span class="line"><span class="keyword">\end</span>&#123;frame&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;frame&#125;&#123;Content&#125;</span><br><span class="line">    <span class="keyword">\tableofcontents</span></span><br><span class="line"><span class="keyword">\end</span>&#123;frame&#125;</span><br><span class="line"><span class="keyword">\section</span>&#123;Model&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;frame&#125;&#123;Model&#125;</span><br><span class="line">    <span class="keyword">\begin</span>&#123;itemize&#125;</span><br><span class="line">        <span class="keyword">\item</span> hello world!</span><br><span class="line">    <span class="keyword">\end</span>&#123;itemize&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;block&#125;&#123;Potential Problems&#125;</span><br><span class="line">    This title format is not as problematic</span><br><span class="line"><span class="keyword">\end</span>&#123;block&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;frame&#125;</span><br><span class="line"><span class="keyword">\section</span>&#123;Estiamte Method&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;frame&#125;&#123;Estimate Method&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">\end</span>&#123;frame&#125;</span><br><span class="line"><span class="keyword">\section</span>&#123;Asympotic Theory&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;frame&#125;&#123;Asympotic Theory&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">\end</span>&#123;frame&#125;</span><br><span class="line"><span class="keyword">\section</span>&#123;Conclusion&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;frame&#125;&#123;Conclusion&#125;</span><br><span class="line">Here is a cation example, you are welcome to use any style <span class="keyword">\cite</span>&#123;Vishwanath10&#125;   </span><br><span class="line"><span class="keyword">\end</span>&#123;frame&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;frame&#125; [allowframebreaks]<span class="keyword">\frametitle</span>&#123;References&#125;    <span class="params">#</span>引用文献</span><br><span class="line">    <span class="keyword">\bibliographystyle</span>&#123;apalike&#125;</span><br><span class="line">    <span class="keyword">\bibliography</span>&#123;bibfile&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;frame&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Beamer模版展示"><a href="#Beamer模版展示" class="headerlink" title="Beamer模版展示"></a><strong>Beamer模版展示</strong></h4>
+
+	<div class="row">
+    <embed src="Lifeng-example.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/Latex/">#Latex</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/Beamer/">#Beamer</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/bib/">#bib</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/04/27/markdown%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Markdown使用教程</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Liu Lifeng</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
+</html>
